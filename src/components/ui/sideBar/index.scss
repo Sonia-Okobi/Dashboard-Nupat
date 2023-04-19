@@ -1,0 +1,44 @@
+.side-bar {
+  background: #1d1042;
+  padding: 38px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  color: #ffffff;
+
+  &__content {
+    &__message {
+      background: #45269c;
+      padding: 12px 25px;
+      display: flex;
+      gap: 8px;
+      margin-bottom: 40px;
+      border-radius: 8px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    &__links {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      align-items: flex-start;
+      //   padding-left: 8px;
+      //   padding-right: 8px;
+    }
+
+    .first {
+      border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.5);
+      padding-bottom: 32px;
+    }
+
+    .second {
+      padding-top: 32px;
+      opacity: 0.7;
+    }
+  }
+}

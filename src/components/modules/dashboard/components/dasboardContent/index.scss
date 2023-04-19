@@ -1,0 +1,62 @@
+.dashboard-content {
+  background: var(--background);
+
+  &__header {
+    background: #fff;
+    padding: 40px 64px 25px;
+
+    &__text {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 56px;
+
+      &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+    }
+
+    &__actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__members {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        &__profile {
+          width: 80px;
+        }
+      }
+
+      &__views {
+        display: flex;
+        gap: 18px;
+        color: #7d8088;
+
+        .view-plus {
+          display: flex;
+          color: #7d8088;
+        }
+      }
+    }
+  }
+
+  &__tasks {
+    padding: 64px 64px 78px;
+    display: flex;
+    gap: 40px;
+
+    &__progress {
+      flex: 1;
+
+      .task-button {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.profile-stack {
+  display: flex;
+  align-items: center;
+
+  &__avatar {
+    display: block;
+    border-radius: 100vh;
+    border: 1px solid #fff;
+
+    @for $i from 1 through 3 {
+      &:nth-child(#{$i}) {
+        transform: translate(($i - 1) * -8px, 0);
+      }
+    }
+  }
+}

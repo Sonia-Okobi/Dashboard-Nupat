@@ -1,0 +1,63 @@
+@import './common/button';
+@import './common/fonts';
+
+:root {
+  --background: #fcfbfc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  text-decoration: none;
+  background: transparent;
+  box-sizing: border-box;
+  border: 0;
+  outline: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 46px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+span {
+  display: flex;
+}
+
+.p {
+  color: #b8b9bd;
+  font-weight: 400;
+
+  &--2xs {
+    @extend .p;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  &--xs {
+    @extend .p;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &--sm {
+    @extend .p;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    font-weight: 600;
+  }
+}
