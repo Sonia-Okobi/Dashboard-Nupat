@@ -18,10 +18,10 @@ Project is created with the following:
 
 ## Setup/Installation
 
-* To run this project, install it locally using npm
+To run this project, install it locally using yarn:
 * Download or clone the repository
-* Run npm install
-* Run npm dev
+* Run yarn install
+* Run yarn dev
 
 ## Approach
 
