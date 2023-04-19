@@ -12,16 +12,17 @@ Dashboard-Nupat is a single page application developed with React
 
 Project is created with the following:
 
-* React
-* SCSS
-* Typescript
+- React
+- SCSS
+- Typescript
 
 ## Setup/Installation
 
 To run this project, install it locally using yarn:
-* Download or clone the repository
-* Run yarn install
-* Run yarn dev
+
+- Download or clone the repository
+- Run yarn install
+- Run yarn dev
 
 ## Approach
 
