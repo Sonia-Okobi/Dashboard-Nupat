@@ -30,4 +30,4 @@ I created the application using vite as it provides a fast and lightweight devel
 
 ## Difficulties
 
-The challenge I ran into was trying to get my fonts to work.
+The challenge I ran into was trying to get my fonts to work but I was able to fix it.
