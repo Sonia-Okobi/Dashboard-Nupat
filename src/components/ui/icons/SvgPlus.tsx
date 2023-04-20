@@ -1,10 +1,13 @@
 import React from 'react';
 
-type Props = {};
+type SvgPlusProps = {
+  className?: string
+};
 
-export default function SvgPlus({}: Props) {
+export default function SvgPlus({className}: SvgPlusProps) {
   return (
     <svg
+      className={`${className}`}
       width="18"
       height="18"
       viewBox="0 0 18 18"

@@ -20,6 +20,11 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 19px;
+
+      .welcome-icon {
+        height: 22px;
+        width: 22px;
+      }
     }
 
     &__links {
@@ -40,5 +45,10 @@
       padding-top: 32px;
       opacity: 0.7;
     }
+  }
+
+  .project-icon {
+    height: 22px;
+    width: 22px;
   }
 }

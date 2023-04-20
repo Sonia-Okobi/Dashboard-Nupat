@@ -77,7 +77,7 @@ export default function DashboardContent({}: Props) {
             />
             <TaskCard title="Usability testing" variant="to-do" />
             <BaseButton variant="secondary" className="task-button">
-              <SvgPlus />
+              <SvgPlus className='task-icon'/>
               Add Task
             </BaseButton>
           </Task>
@@ -91,7 +91,7 @@ export default function DashboardContent({}: Props) {
               variant="in-progress"
             />
             <BaseButton variant="secondary" className="task-button">
-              <SvgPlus />
+              <SvgPlus className='task-icon'/>
               Add Task
             </BaseButton>
           </Task>
@@ -106,7 +106,7 @@ export default function DashboardContent({}: Props) {
               variant="completed"
             />
             <BaseButton variant="secondary" className="task-button">
-              <SvgPlus />
+              <SvgPlus className='task-icon'/>
               Add Task
             </BaseButton>
           </Task>

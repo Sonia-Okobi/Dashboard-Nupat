@@ -4,6 +4,7 @@ import SvgAddedUser from '../icons/SvgAddedUser';
 import SvgAffiliate from '../icons/SvgAffiliate';
 import SvgDashboard from '../icons/SvgDashboard';
 import SvgLightning from '../icons/SvgLightning';
+import SvgPlus from '../icons/SvgPlus';
 import SvgSettings from '../icons/SvgSettings';
 import SvgUsers from '../icons/SvgUsers';
 import Link from '../link/Link';
@@ -17,7 +18,7 @@ export default function Sidebar({}: Props) {
       <div className="side-bar__content">
         <div className="side-bar__content__message">
           <span>
-            <SvgLightning />
+            <SvgLightning className='welcome-icon' />
           </span>
           Welcome Keerthi
         </div>
@@ -34,7 +35,7 @@ export default function Sidebar({}: Props) {
           <Link Icon={<SvgUsers />} text="Logout" />
         </div>
       </div>
-      <BaseButton variant="primary"><SvgLightning/>NEW PROJECT</BaseButton>
+      <BaseButton variant="primary"><SvgPlus className='project-icon'/>NEW PROJECT</BaseButton>
     </div>
   );
 }

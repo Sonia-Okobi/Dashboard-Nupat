@@ -1,10 +1,13 @@
 import React from 'react';
 
-type Props = {};
+type SvgLightningProps = {
+  className?: string
+};
 
-export default function SvgLightning({}: Props) {
+export default function SvgLightning({className}: SvgLightningProps) {
   return (
     <svg
+    className={`${className}`}
       width="18"
       height="18"
       viewBox="0 0 18 18"
