@@ -3,6 +3,7 @@
 
 :root {
   --background: #fcfbfc;
+  --text-color: #b8b9bd;
 }
 
 * {
@@ -39,7 +40,7 @@ span {
 }
 
 .p {
-  color: #b8b9bd;
+  color: var(--text-color);
   font-weight: 400;
 
   &--2xs {
