@@ -30,4 +30,4 @@ I created the application using vite as it provides a fast and lightweight devel
 
 ## Difficulties
 
-The design had a lot of components for a single-page application which took a lot more of my time. The design also had a lot of inconsistencies which made it harder to implement the design
+The challenge I ran into was trying to fix the font weight on my buttons. 
