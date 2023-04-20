@@ -30,4 +30,4 @@ I created the application using vite as it provides a fast and lightweight devel
 
 ## Difficulties
 
-The challenge I ran into was trying to fix the font weight on my buttons. 
+The challenge I ran into was trying to get my fonts to work.
