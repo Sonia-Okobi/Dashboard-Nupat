@@ -1,20 +1,20 @@
-.progress-bar {
+.slider {
   border-radius: 24px;
   height: 8px;
   width: 100%;
 
   &--review {
-    @extend .progress-bar;
+    @extend .slider;
     background: #f89d4b;
   }
 
   &--to-do {
-    @extend .progress-bar;
+    @extend .slider;
     background: #ebebeb;
   }
 
   &--in-progress {
-    @extend .progress-bar;
+    @extend .slider;
     background: #ebebeb;
     position: relative;
     
@@ -31,7 +31,7 @@
   }
 
   &--completed {
-    @extend .progress-bar;
+    @extend .slider;
     background: #8bc488;
   }
 }

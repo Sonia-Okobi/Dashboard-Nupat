@@ -4,7 +4,7 @@ import SvgCheckList from '../icons/SvgCheckList';
 import SvgLink from '../icons/SvgLink';
 import SvgMore from '../icons/SvgMore';
 import ProfileStack from '../profileStack/ProfileStack';
-import ProgressBar from '../progressBar/ProgressBar';
+import Slider from '../slider/Slider';
 import './index.scss';
 
 type TaskCardProps = {
@@ -38,7 +38,7 @@ export default function TaskCard({ image, title, variant }: TaskCardProps) {
           </p>
           <p className='task-card__progress-status__info__value'>2/10</p>
         </div>
-        <ProgressBar {...{variant}} />
+        <Slider {...{variant}} />
         <div className="task-card__progress-status__collaboration">
           <div className="task-card__progress-status__collaboration__actions">
             <p className="comments action p--2xs">
