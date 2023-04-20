@@ -1,5 +1,6 @@
 @import './common/button';
 @import './common/fonts';
+@import './common/page';
 
 :root {
   --background: #fcfbfc;
@@ -25,6 +26,7 @@ body {
 button {
   background: transparent;
   cursor: pointer;
+  font-family: inherit;
 }
 
 h1 {
@@ -39,26 +41,4 @@ span {
   display: flex;
 }
 
-.p {
-  color: var(--text-color);
-  font-weight: 400;
 
-  &--2xs {
-    @extend .p;
-    font-size: 12px;
-    line-height: 15px;
-  }
-  &--xs {
-    @extend .p;
-    font-size: 14px;
-    line-height: 17px;
-  }
-
-  &--sm {
-    @extend .p;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
-    font-weight: 600;
-  }
-}
