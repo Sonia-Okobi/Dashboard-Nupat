@@ -1,6 +1,7 @@
 @import './common/button';
 @import './common/fonts';
 @import './common/page';
+@import './common/mixins';
 
 :root {
   --background: #fcfbfc;
@@ -35,6 +36,11 @@ h1 {
   line-height: 46px;
   letter-spacing: -0.02em;
   color: #000000;
+
+  @include mobile(600px) {
+    font-size: 24px;
+    line-height: 32px;
+   }
 }
 
 span {

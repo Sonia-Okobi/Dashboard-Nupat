@@ -1,31 +1,42 @@
-import React from 'react';
-import BaseButton from '../../../../ui/button/BaseButton';
-import SvgBoard from '../../../../ui/icons/SvgBoard';
-import SvgCheckList from '../../../../ui/icons/SvgCheckList';
-import SvgLightning from '../../../../ui/icons/SvgLightning';
-import SvgPlus from '../../../../ui/icons/SvgPlus';
-import SvgUsers from '../../../../ui/icons/SvgUsers';
-import ProfileStack from '../../../../ui/profileStack/ProfileStack';
-import Task from '../../../../ui/task/Task';
-import TaskCard from '../../../../ui/task/TaskCard';
-import TaskHeader from '../../../../ui/task/TaskHeader';
-import dribbble from '../../../../../assets/images/dribbble.png';
-import anais from '../../../../../assets/images/anais.png';
-import camplog from '../../../../../assets/images/camplog.png';
-import './index.scss';
+import React, { useState } from "react";
+import BaseButton from "../../../../ui/button/BaseButton";
+import SvgBoard from "../../../../ui/icons/SvgBoard";
+import SvgCheckList from "../../../../ui/icons/SvgCheckList";
+import SvgLightning from "../../../../ui/icons/SvgLightning";
+import SvgPlus from "../../../../ui/icons/SvgPlus";
+import SvgUsers from "../../../../ui/icons/SvgUsers";
+import ProfileStack from "../../../../ui/profileStack/ProfileStack";
+import Task from "../../../../ui/task/Task";
+import TaskCard from "../../../../ui/task/TaskCard";
+import TaskHeader from "../../../../ui/task/TaskHeader";
+import dribbble from "../../../../../assets/images/dribbble.png";
+import anais from "../../../../../assets/images/anais.png";
+import camplog from "../../../../../assets/images/camplog.png";
+import "./index.scss";
+import dropdown from "../../../../../assets/svg/arrow-down.svg";
 
 type Props = {};
 
 export default function DashboardContent({}: Props) {
+  const [dropDownVisible, setDropDownVisible] = useState(false);
+
+  const handleDropDown = () => {
+    setDropDownVisible(!dropDownVisible);
+  };
+
   return (
     <div className="dashboard-content">
       <div className="dashboard-content__header">
         <div className="dashboard-content__header__text">
           <div className="dashboard-content__header__text__info">
             <h1>New Campaign Run </h1>
-            <p className='p--xs'>A new campaign launch work for brand new featur in May month</p>
+            <p className="p--xs">
+              A new campaign launch work for brand new featur in May month
+            </p>
           </div>
-          <BaseButton variant="alternate">ADD MEMBERS</BaseButton>
+          <div className="dashboard-content__header__text__button">
+            <BaseButton variant="alternate">ADD MEMBERS</BaseButton>
+          </div>
         </div>
         <div className="dashboard-content__header__actions">
           <div className="dashboard-content__header__actions__members">
@@ -33,7 +44,46 @@ export default function DashboardContent({}: Props) {
               size={32}
               className="dashboard-content__header__actions__members__profile"
             />
-            <p className='p--xs'>8 member</p>
+            <p className="p--xs">8 member</p>
+          </div>
+          <div className="dashboard-content__header__actions__filter">
+            <button onClick={handleDropDown} className={`${dropDownVisible ? handleDropDown : null}`}>
+              Views
+              <img src={dropdown} alt="Arrow" />
+            </button>
+            <div
+              className={`mobile-actions ${
+                dropDownVisible ? "mobile-active" : null
+              }`}
+            >
+              <a className="base-button--plain" href="/">
+                <span>
+                  <SvgUsers />
+                </span>
+                Participants View
+              </a>
+              <a className="base-button--plain" href="/">
+                <span>
+                  <SvgBoard />
+                </span>
+                Board View
+              </a>
+              <a className="base-button--plain" href="/">
+                <span>
+                  <SvgCheckList />
+                </span>
+                List View
+              </a>
+              <a className="base-button--plain" href="/">
+                <span>
+                  <SvgLightning />
+                </span>
+                Power View
+              </a>
+              <a href="/" className="view-plus">
+                <SvgPlus />
+              </a>
+            </div>
           </div>
           <div className="dashboard-content__header__actions__views">
             <a className="base-button--plain" href="/">
@@ -60,7 +110,7 @@ export default function DashboardContent({}: Props) {
               </span>
               Power View
             </a>
-            <a href="/" className='view-plus'>
+            <a href="/" className="view-plus">
               <SvgPlus />
             </a>
           </div>
@@ -77,7 +127,7 @@ export default function DashboardContent({}: Props) {
             />
             <TaskCard title="Usability testing" variant="to-do" />
             <BaseButton variant="secondary" className="task-button">
-              <SvgPlus className='task-icon'/>
+              <SvgPlus className="task-icon" />
               Add Task
             </BaseButton>
           </Task>
@@ -91,7 +141,7 @@ export default function DashboardContent({}: Props) {
               variant="in-progress"
             />
             <BaseButton variant="secondary" className="task-button">
-              <SvgPlus className='task-icon'/>
+              <SvgPlus className="task-icon" />
               Add Task
             </BaseButton>
           </Task>
@@ -106,7 +156,7 @@ export default function DashboardContent({}: Props) {
               variant="completed"
             />
             <BaseButton variant="secondary" className="task-button">
-              <SvgPlus className='task-icon'/>
+              <SvgPlus className="task-icon" />
               Add Task
             </BaseButton>
           </Task>

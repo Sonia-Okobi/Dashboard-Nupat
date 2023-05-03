@@ -1,4 +1,10 @@
-.dashboard{
-    display: grid;
-    grid-template-columns: 272px 1fr;
+@import '../../../../styles/common/mixins';
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 272px 1fr;
+
+  @include mobile(986px) {
+    display: block;
+  }
 }
