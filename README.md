@@ -26,7 +26,7 @@ To run this project, install it locally using yarn:
 
 ## Approach
 
-I created the application using vite as it provides a fast and lightweight development server that enables you to see changes in real-time as you write code. I chose to use Typescript as it enabled me to evade errors and to make my rewrites more easier. I used SCSS to make my stylesheet more structured and maintainable where I created variables and variants to reduce repititions in my code. I also used Flexbox and Grid which allowed me to create responsive layout for the application. I took into consideration coercion and separation of concerns while architecting my project folder. I created common components which I used as basic building blocks for my application.
+I created the application using vite as it provides a fast and lightweight development server that enables you to see changes in real-time as you write code. I chose to use Typescript as it enabled me to evade errors and to make my rewrites more easier. I used SCSS to make my stylesheet more structured and maintainable where I created variables and variants to reduce repititions in my code. I also used Flexbox and Grid which allowed me to create responsive layout for the application. I took into consideration coercion and separation of concerns while architecting my project folder. I created common components which I used as basic building blocks for my application. I made it responsive by using SCSS mixins to create media queries.
 
 ## Difficulties
 
